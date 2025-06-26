@@ -1,3 +1,4 @@
+import './gesture-handler';
 import "./global.css";
 import { Text, View } from "react-native";
 
