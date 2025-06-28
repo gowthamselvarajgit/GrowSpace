@@ -1,15 +1,21 @@
-import './gesture-handler';
+import "react-native-gesture-handler";
 import "./global.css";
-import { Text, View } from "react-native";
+import Landingcreen from "./src/screens/Landingcreen";
+import { NavigationContainer, NavigationContext } from "@react-navigation/native";
+import VideoLanding from "./src/screens/VideoLanding";
+import{createNativeStackNavigator} from "@react-navigation/native-stack";
+import React from "react";
+const Stack = createNativeStackNavigator();
 
 const App = () => {
   return (
-    <View className="flex-1 items-center justify-center bg-white">
-      <Text className="text-xl font-bold text-blue-500">
-        Welcome to NativeWind!
-      </Text>
-    </View>
-  )
-}
+  <NavigationContainer>
+      <Stack.Navigator screenOptions={{headerShown: false}} >
+      <Stack.Screen name="VideoLanding" component={VideoLanding} />
+      <Stack.Screen name="LandingScreen" component={Landingcreen} />
+    </Stack.Navigator>
+  </NavigationContainer>
+  );
+};
 
-export default App
+export default App;
