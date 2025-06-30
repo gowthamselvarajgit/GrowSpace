@@ -81,7 +81,7 @@ const LandingScreen = () => {
                       x: width * (index + 1),
                       animated: true,
                     })
-                  : navigation.navigate("LoginScreen")
+                  : navigation.navigate("SignUpScreen")
               }
               className="bg-white px-6 py-3 rounded-2xl w-[80%] items-center mt-10 shadow-xl active:opacity-80"
             >
