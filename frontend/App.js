@@ -5,6 +5,7 @@ import { NavigationContainer, NavigationContext } from "@react-navigation/native
 import VideoLanding from "./src/screens/VideoLanding";
 import{createNativeStackNavigator} from "@react-navigation/native-stack";
 import React from "react";
+import LoginScreen from "./src/screens/LoginScreen";
 const Stack = createNativeStackNavigator();
 
 const App = () => {
@@ -13,6 +14,7 @@ const App = () => {
       <Stack.Navigator screenOptions={{headerShown: false}} >
       <Stack.Screen name="VideoLanding" component={VideoLanding} />
       <Stack.Screen name="LandingScreen" component={Landingcreen} />
+      <Stack.Screen name="LoginScreen" component={LoginScreen} />
     </Stack.Navigator>
   </NavigationContainer>
   );
