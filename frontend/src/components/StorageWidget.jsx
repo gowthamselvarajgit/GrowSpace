@@ -8,7 +8,7 @@ const StorageWidget = ({ usedGB = 0 }) => {
   return (
     <View className="mx-5 bg-blue-600 rounded-2xl p-5 shadow-lg flex-row items-center">
       <Image
-        source={require("../assets/images.cloud.png")}
+        source={require("../assets/images/cloud.png")}
         className="w-14 h-14 mr-4"
         resizeMode="contain"
       />

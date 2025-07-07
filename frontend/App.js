@@ -11,6 +11,7 @@ import LoginScreen from "./src/screens/LoginScreen";
 import SignUpScreen from "./src/screens/SignUpScreen";
 import UserProfileScreen from "./src/screens/UserProfileScreen";
 import Header from "./src/components/Header";
+import Dashboard from "./src/screens/Dashboard";
 
 const App = () => {
 
@@ -23,12 +24,12 @@ const App = () => {
   return (
   <NavigationContainer>
       <Stack.Navigator screenOptions={{headerShown: false}} > 
-      {/* <Stack.Screen name="VideoLanding" component={VideoLanding} />
+      <Stack.Screen name="VideoLanding" component={VideoLanding} />
       <Stack.Screen name="LandingScreen" component={Landingcreen} />
       <Stack.Screen name="SignUpScreen" component={SignUpScreen} />
       <Stack.Screen name="LoginScreen" component={LoginScreen} />
-      <Stack.Screen name="UserProfileScreen" component={UserProfileScreen} />  */}
-      <Stack.Screen name="Header" component={Header} />
+      <Stack.Screen name="UserProfileScreen" component={UserProfileScreen} /> 
+      <Stack.Screen name="DashboardScreen" component={Dashboard} />
 
     </Stack.Navigator>
   </NavigationContainer>
