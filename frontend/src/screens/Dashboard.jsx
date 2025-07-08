@@ -1,7 +1,6 @@
-import { View, Text } from "react-native";
+import { View, Text, ScrollView } from "react-native";
 import React from "react";
-import { ScrollView } from "react-native-web";
-import { Header } from "@react-navigation/stack";
+import Header from "../components/Header"; // ✅ Your custom Header
 import StorageWidget from "../components/StorageWidget";
 import FileTypeCard from "../components/FileTypeCard";
 
@@ -11,7 +10,8 @@ const Dashboard = () => {
       <Header name="Gowtham" />
       <StorageWidget usedGB={3.2} />
       <View className="flex-row justify-between mt-4">
-        <FileTypeCard label={Picture} count={896} />
+        <FileTypeCard label="Pictures" count={896} color="bg-blue-500" />
+        {/* Add more FileTypeCards if needed */}
       </View>
     </ScrollView>
   );

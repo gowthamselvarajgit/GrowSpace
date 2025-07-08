@@ -3,7 +3,7 @@ import React from "react";
 
 const OnboardingSlide = ({ image, title, subtitle, isLast, onPress }) => {
   return (
-    <View className="w-screen items-center px-6 justify-between">
+    <View className="w-full items-center px-6 justify-between">
       <Image
         source={image}
         className="w-full h-1/2 mb-6"

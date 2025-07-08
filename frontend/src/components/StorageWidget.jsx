@@ -1,6 +1,6 @@
-import { View, Text } from "react-native";
 import React from "react";
-import { ProgressBar } from "react-native-web";
+import { View, Text, Image } from "react-native";
+import { ProgressBar } from "react-native-paper";
 
 const StorageWidget = ({ usedGB = 0 }) => {
   const percentage = usedGB / 5;
@@ -18,7 +18,7 @@ const StorageWidget = ({ usedGB = 0 }) => {
           Storage Used
         </Text>
         <Text className="text-white text-sm mb-2">
-          {usedGB.toFixed(2)} GB of %GB used
+          {usedGB.toFixed(2)} GB of 5 GB used
         </Text>
         <ProgressBar
           progress={percentage}

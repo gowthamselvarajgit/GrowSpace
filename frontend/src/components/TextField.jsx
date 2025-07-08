@@ -1,4 +1,4 @@
-import { View, Text, TextInput } from "react-native";
+import { TextInput } from "react-native";
 import React from "react";
 
 const TextField = ({
@@ -16,6 +16,7 @@ const TextField = ({
       onChangeText={onChangeText}
       onBlur={onBlur}
       secureTextEntry={secureTextEntry}
+      autoCapitalize="none"
       className="border border-slate-300 bg-white rounded-xl px-4 py-3 mb-2 text-base font-outfit"
     />
   );

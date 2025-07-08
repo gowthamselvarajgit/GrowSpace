@@ -3,10 +3,10 @@ import React from "react";
 
 const Logo = () => {
   return (
-    <View clasName="items-center">
+    <View className="items-center">
       <Image
         source={require("../assets/images/logo.jpg")}
-        className="w-100 h-24 mb-4"
+        className="w-[100px] h-24 mb-4"
         resizeMode="contain"
       />
     </View>

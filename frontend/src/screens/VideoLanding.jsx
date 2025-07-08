@@ -17,7 +17,7 @@ const VideoLanding = () => {
   return (
     <View
       className="flex-1 items-center justify-center"
-      style={{ backgroundColor: "rgba(16, 90, 251, 1)" }} 
+      style={{ backgroundColor: "rgba(16, 90, 251, 1)" }}
     >
       <Video
         ref={videoRef}
